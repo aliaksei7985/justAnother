@@ -1,0 +1,23 @@
+.logo {
+    display: flex;
+    align-items: center;
+
+    &__img {
+        height: 100%;
+        margin-right: 16px;
+    }
+
+    &__offer {
+        text-transform: uppercase;
+    }
+
+    &__upperrow {
+        font-family: 'roboto condensed';
+        font-weight: 700;
+    }
+
+    &__lowerrow {
+        font-family: 'roboto';
+        font-weight: 400;
+    }
+}

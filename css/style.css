@@ -1,0 +1,413 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  line-height: 1.15;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+p + p {
+  margin-top: 1rem;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  line-height: inherit;
+  border: 1px solid currentColor;
+}
+
+button {
+  overflow: visible;
+  text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+  padding: 1px 6px;
+}
+
+input {
+  overflow: visible;
+}
+
+input,
+textarea {
+  padding: 1px;
+}
+
+fieldset {
+  border: 1px solid currentColor;
+  margin: 0 2px;
+}
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+select {
+  text-transform: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=color] {
+  background: inherit;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+::-webkit-search-decoration,
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  color: inherit;
+  overflow: visible;
+}
+
+dl,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+ol ol,
+ol ul,
+ol dl,
+ul ol,
+ul ul,
+ul dl,
+dl ol,
+dl ul,
+dl dl {
+  margin: 0;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+details {
+  display: block;
+}
+
+dialog {
+  background-color: inherit;
+  border: solid;
+  color: inherit;
+  display: block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+dialog:not([open]) {
+  display: none;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "roboto", sans-serif;
+  src: url(fonts/Roboto-Regular.ttf), url(fonts/Roboto-Medium.ttf), url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "roboto condensed", sans-serif;
+  src: url(fonts/RobotoCondensed-Regular.ttf), url(fonts/RobotoCondensed-Bold.ttf);
+}
+.header {
+  background-color: #FFE11E;
+}
+.header__wrapper {
+  max-width: 1200px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav {
+  flex: 0 1 77.5%;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.header__item {
+  list-style: none;
+}
+.header__link {
+  font-family: "roboto condensed";
+  font-weight: 500;
+  font-size: 19px;
+  color: #1A12E6;
+  text-decoration: none;
+}
+
+.contacts {
+  background-color: #0A075A;
+}
+.contacts__item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.contacts__text {
+  font-family: "roboto";
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo__img {
+  height: 100%;
+  margin-right: 16px;
+}
+.logo__offer {
+  text-transform: uppercase;
+}
+.logo__upperrow {
+  font-family: "roboto condensed";
+  font-weight: 700;
+}
+.logo__lowerrow {
+  font-family: "roboto";
+  font-weight: 400;
+}
+
+.main {
+  background-color: #FFE11E;
+}
+
+.offer__visual {
+  display: flex;
+  align-items: flex-end;
+  background-image: linear-gradient(-90deg, #000000 0%, rgba(0, 0, 0, 0) 40.07%), url(../img/teenagers-friends.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 595px;
+}
+.offer__advantages {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+.offer__features {
+  margin-right: 58px;
+}
+.offer__header {
+  font-family: "roboto condensed", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #FFFFFF;
+  margin: 20px 0 0 0;
+}
+.offer__header_blue {
+  color: #1A12E6;
+  margin-top: 50px;
+}
+.offer__description {
+  font-family: "roboto condensed";
+  font-weight: 700;
+  font-size: 33px;
+  color: #FFFFFF;
+  margin: 5px 0;
+}
+.offer__description_blue {
+  color: #1A12E6;
+  text-align: center;
+}
+.offer__flags {
+  margin-bottom: 20px;
+}
+.offer__flag {
+  margin-right: 15px;
+}
+.offer__sign {
+  width: 142px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.offer__actions {
+  flex-flow: column wrap;
+}
+.offer__buttons {
+  display: flex;
+  margin-bottom: 60px;
+}
+.offer__button {
+  font-family: "roboto condensed";
+  font-weight: 700;
+  font-size: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #E61238;
+  border-radius: 15px;
+  border: none;
+  margin-left: 20px;
+  padding: 0 20px 0 20px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.background {
+  background-color: #1A12E6;
+  width: 100%;
+  opacity: 0.9;
+}

@@ -1,0 +1,22 @@
+
+.contacts {
+    background-color: #0A075A;
+
+    &__item {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        // vertical-align: bottom;
+    }
+
+    &__text {
+        font-family: 'roboto';
+        font-weight: 500;
+        font-size: 15px;
+        color: #ffff;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,20 @@
+@import 'reset';
+@import 'header';
+@import 'contacts';
+@import 'logo';
+@import 'main';
+@import 'offer';
+
+.wrapper {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.background {
+    background-color: #1A12E6;
+    width: 100%;
+    opacity: 0.9;
+}

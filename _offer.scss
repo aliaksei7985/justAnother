@@ -1,0 +1,84 @@
+.offer {
+
+    &__visual {
+        display: flex;
+        align-items: flex-end;
+        background-image:   linear-gradient(-90deg, #000000 0%, rgba(0, 0, 0, 0) 40.07%),
+                            url(../img/teenagers-friends.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 595px;
+    }
+
+    &__advantages {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    &__features {
+        margin-right: 58px;
+    }
+
+    &__header {
+        font-family: 'roboto condensed', sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+        color: #FFFFFF;
+        margin: 20px 0 0 0;
+
+        &_blue {
+            color: #1A12E6;
+            margin-top: 50px;
+        }
+    }
+
+    &__description {
+        font-family: 'roboto condensed';
+        font-weight: 700;
+        font-size: 33px;
+        color: #FFFFFF;
+        margin: 5px 0;
+
+        &_blue {
+            color: #1A12E6;
+            text-align: center;
+        }
+    }
+
+    &__flags {
+        margin-bottom: 20px;
+    }
+
+    &__flag {
+        margin-right: 15px;
+    }
+
+    &__sign {
+        width: 142px;
+        object-fit: cover;
+    }
+
+    &__actions {
+        flex-flow: column wrap;
+    }
+
+    &__buttons {
+        display: flex;
+        margin-bottom: 60px;
+    }
+
+    &__button {
+        font-family: 'roboto condensed';
+        font-weight: 700;
+        font-size: 19px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: #E61238;
+        border-radius: 15px;
+        border: none;
+        margin-left: 20px;
+        padding: 0 20px 0 20px;
+    }
+}
